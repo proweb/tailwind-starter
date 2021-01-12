@@ -3,8 +3,13 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
   },
-  purge: ['./public/**/*.html'],
+  purge: [
+    './public/**/*.html',
+  ],
   theme: {
+    fontFamily: {
+      body: ['PT Sans', 'sans-serif'],
+    },
     extend: {},
   },
   variants: {},

@@ -1,15 +1,25 @@
 {
+  "name": "tailwind-2-starter",
+  "version": "1.0.0",
+  "description": "Starter package with Tailwind CSS",
+  "author": {
+    "name": "Serey Mochalov",
+    "email": "mail@newwebmaster.ru",
+    "url": "https://newwebmaster.com"
+  },
   "dependencies": {
-    "autoprefixer": "^9",
-    "postcss-cli": "^8.0.0",
-    "tailwindcss": "^1.8.10"
+    "autoprefixer": "^10.2.1",
+    "postcss": "^8.2.4",
+    "postcss-import": "^14.0.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
     "live-server": "^1.2.1"
   },
   "scripts": {
-    "dev": "concurrently \"postcss node_modules/tailwindcss/tailwind.css -o ./public/tailwind.css -w\" \"live-server ./public\"",
-    "build": "NODE_ENV=production postcss node_modules/tailwindcss/tailwind.css -o ./public/tailwind.css"
+    "dev": "concurrently \"postcss src/css/main.css -o public/css/style.css -w\" \"live-server ./public\"",
+    "build": "NODE_ENV=production postcss src/css/main.css -o ./public/css/style.css"
   }
 }
