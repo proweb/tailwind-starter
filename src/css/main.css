@@ -1,4 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+@theme {
+  --font-body: "PT Sans", sans-serif;
+}
 
