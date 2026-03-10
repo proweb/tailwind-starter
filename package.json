@@ -4,8 +4,7 @@
   "description": "Starter package with Tailwind CSS",
   "author": {
     "name": "Serey Mochalov",
-    "email": "mail@newwebmaster.ru",
-    "url": "https://newwebmaster.com"
+    "url": "https://sg43.ru"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
